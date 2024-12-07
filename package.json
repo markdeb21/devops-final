@@ -2,9 +2,9 @@
   "name": "devops-final",
   "version": "1.0.0",
   "scripts": {
-    "test": "jest"
+    "test": "npx jest"
   },
   "devDependencies": {
-    "jest": "^29.0.0"
+    "jest": "^29.7.0"
   }
 }

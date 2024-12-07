@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04 # Especificar la versión de Ubuntu
+    runs-on: ubuntu-latest
 
     steps:
       - name: Check out code
@@ -19,13 +19,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18 # Cambia según tu versión de Node.js
+          node-version: 18
 
       - name: Install dependencies
         run: npm install
 
       - name: Run tests
-        run: npm test # Aquí se especifica el comando correctamente
-
-      - name: Build project
-        run: npm run build
+        run: npx jest # Asegúrate de usar npx para ejecutar jest correctamente
