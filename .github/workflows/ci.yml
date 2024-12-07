@@ -25,4 +25,7 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run
+        run: npm test # Aquí se especifica el comando correctamente
+
+      - name: Build project
+        run: npm run build
